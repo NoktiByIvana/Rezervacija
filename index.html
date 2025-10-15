@@ -236,9 +236,9 @@ option.booked{
 
     <div class="card" style="margin-top:20px;">
   <h2 style="color:var(--accent);margin-bottom:12px;">Kontakt</h2>
-  <p style="margin:0 0 8px;">📞 Telefon: <a href="tel:+38761123456" style="color:var(--accent);text-decoration:none;">+387 61 123 456</a></p>
+  <p style="margin:0 0 8px;">📞 Telefon: <a href="tel:+387 066 017 572" style="color:var(--accent);text-decoration:none;">+387 61 123 456</a></p>
   <p style="margin:0 0 8px;">📧 Email: <a href="mailto:Noktibyivanaa@gmail.com" style="color:var(--accent);text-decoration:none;">Noktibyivanaa@gmail.com</a></p>
-  <p style="margin:0 0 8px;">📍 Adresa: Ulica 123, Grad, BiH</p>
+  
   <div style="margin-top:10px;">
     <a href="https://www.instagram.com/ivanaa_sh?igsh=MW5keWg0and4cWVi" target="_blank" style="color:var(--accent);text-decoration:none;margin-right:12px;">Instagram</a>
 
@@ -320,7 +320,7 @@ form.addEventListener('submit', async e=>{
 
     const res = await fetch(FORM_ACTION,{method:'POST',body:formData,headers:{'Accept':'application/json'}});
     if(res.ok){
-      status.textContent='✅ Uspešno poslato! Ivana će vas kontaktirati.';
+      status.textContent='✅ Uspešno ste rezervisali termin!';
       form.reset();
       updateAvailableTimes(); 
     } else throw new Error('Greška pri slanju.');
@@ -437,3 +437,4 @@ window.addEventListener('resize', ()=>{
 
 </body>
 </html>
+
